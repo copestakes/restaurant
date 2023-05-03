@@ -2,7 +2,7 @@ const menu = [
   {
     id: 1,
     category: 'starters',
-    image: 'images/beer-cheese-dip.jpg',
+    image: './images/beer-cheese-dip.jpg',
     title: 'Beer Cheese Dip with Soft Pretzels',
     description:
       'Creamy cheese dip made with beer and served with soft, warm pretzels for dipping.',
@@ -11,6 +11,7 @@ const menu = [
   {
     id: 2,
     category: 'starters',
+    image: './images/fried-pickles.jpg',
     title: 'Fried Pickles with Ranch Dressing',
     description:
       'Crispy fried pickles with a tangy ranch dressing for dipping.',
@@ -19,6 +20,7 @@ const menu = [
   {
     id: 3,
     category: 'starters',
+    image: './images/chicken-wings.jpg',
     title: 'Buffalo Chicken Wings with Blue Cheese Sauce',
     description:
       'Spicy buffalo chicken wings served with a cool and tangy blue cheese sauce.',
@@ -27,6 +29,7 @@ const menu = [
   {
     id: 4,
     category: 'starters',
+    image: './images/pulled-pork-sliders.jpg',
     title: 'BBQ Pulled Pork Sliders with Coleslaw',
     description:
       'Slow-cooked pulled pork in a sweet and smoky BBQ sauce, served on mini buns with a side of tangy coleslaw.',
@@ -35,6 +38,7 @@ const menu = [
   {
     id: 5,
     category: 'starters',
+    image: './images/cheese-plate.jpg',
     title: 'Charcuterie Board with Assorted Meats, Cheeses, and Crackers',
     description:
       'A selection of cured meats, cheeses, crackers, and accompaniments like olives, nuts, and fruit.',
@@ -43,6 +47,7 @@ const menu = [
   {
     id: 6,
     category: 'salads',
+    image: './images/caesar-salad.jpg',
     title: 'Classic Caesar Salad with Grilled Chicken',
     description:
       'Crisp romaine lettuce, garlic croutons, and shaved parmesan cheese tossed in a creamy Caesar dressing and topped with grilled chicken.',
@@ -51,6 +56,7 @@ const menu = [
   {
     id: 7,
     category: 'salads',
+    image: './images/beet-salad.jpg',
     title: 'Roasted Beet Salad with Goat Cheese and Candied Walnuts',
     description:
       'Roasted beets, creamy goat cheese, and candied walnuts tossed in a honey mustard vinaigrette.',
@@ -59,6 +65,7 @@ const menu = [
   {
     id: 8,
     category: 'salads',
+    image: './images/cobb-salad.jpg',
     title: 'Cobb Salad with Bacon, Avocado, and Egg',
     description:
       'Mixed greens topped with crispy bacon, avocado, hard-boiled egg, cherry tomatoes, and blue cheese crumbles, served with your choice of dressing.',
@@ -67,6 +74,7 @@ const menu = [
   {
     id: 9,
     category: 'salads',
+    image: './images/garden-salad.jpg',
     title: 'Garden Salad with Mixed Greens, Tomatoes, Cucumbers, and Carrots',
     description:
       'A classic salad with mixed greens, cherry tomatoes, cucumbers, shredded carrots, and your choice of dressing.',
@@ -75,6 +83,7 @@ const menu = [
   {
     id: 10,
     category: 'mains',
+    image: './images/fish-and-chips.jpg',
     title: 'Beer-Battered Fish and Chips with Tartar Sauce',
     description:
       'Flaky white fish dipped in a light beer batter and fried until golden brown, served with crispy French fries and homemade tartar sauce.',
@@ -83,6 +92,7 @@ const menu = [
   {
     id: 11,
     category: 'mains',
+    image: './images/beer-cheese-dip.jpg',
     title: 'Grilled Beer Bratwurst with Sauerkraut and Mustard',
     description:
       'Grilled bratwurst served on a warm bun with tangy sauerkraut and spicy mustard.',
@@ -91,6 +101,7 @@ const menu = [
   {
     id: 12,
     category: 'mains',
+    image: './images/chicken-waffles.jpg',
     title: 'Chicken and Waffles with Honey Butter and Hot Sauce',
     description:
       'Crispy fried chicken served on a fluffy waffle with sweet honey butter and a side of spicy hot sauce.',
@@ -99,6 +110,7 @@ const menu = [
   {
     id: 13,
     category: 'mains',
+    image: './images/veggie-burger.jpg',
     title: 'Veggie Burger with Avocado, Tomato, and Chipotle Aioli',
     description:
       'A plant-based patty topped with sliced avocado, tomato, and a smoky chipotle aioli, served on a toasted bun.',
@@ -107,6 +119,7 @@ const menu = [
   {
     id: 13,
     category: 'mains',
+    image: './images/grilled-cheese.jpg',
     title: 'Grilled Cheese Sandwich with Tomato Soup',
     description:
       'A classic grilled cheese sandwich made with melty cheese and crispy bread, served with a side of creamy tomato soup for dipping.',
@@ -182,6 +195,7 @@ const sectionCenter = document.querySelector('.section-center');
 window.addEventListener('DOMContentLoaded', function () {
   let displayMenu = menu.map(function (item) {
     return ` <article class="menu-item">
+    <img src="${item.image}" alt="${item.title}">
    <div class="item-info">
      <h4 class='item-title'>${item.title}</h4>
      <p class="item-description">${item.description}</p>
