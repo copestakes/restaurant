@@ -92,7 +92,7 @@ const menu = [
   {
     id: 11,
     category: 'mains',
-    image: './images/beer-cheese-dip.jpg',
+    image: './images/grilled-brats.jpg',
     title: 'Grilled Beer Bratwurst with Sauerkraut and Mustard',
     description:
       'Grilled bratwurst served on a warm bun with tangy sauerkraut and spicy mustard.',
@@ -128,6 +128,7 @@ const menu = [
   {
     id: 14,
     category: 'sides',
+    image: './images/aoli-fries.jpg',
     title: 'French Fries with Garlic Aioli',
     description:
       'Crispy French fries served with a zesty garlic aioli dipping sauce.',
